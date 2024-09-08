@@ -26,7 +26,17 @@
  #
 
 - Go ahead and enter the Subnet IP Address that you copied down before and make sure to add /24 at the end of the address.
-- 
-- Next, take the 
+- Next, for the address, we'll use the address from the previous screen under DHCPv4. Just make sure not to include /24 this time.
+- Next, enter the Gateway IP copied from earlier.
+- Finally, enter 8.8.8.8 under Name Server.
+- We can leave the search domains blank and then save these settings.
  <img width="632" alt="Screenshot 2024-09-08 134022" src="https://github.com/user-attachments/assets/8bc807f1-bd14-4fcf-b998-6e40e434247e">
 
+ #
+
+- Copy down the static IP address and then continue.
+- Next, continue through the options until you get to the profile setup.
+- Once there select your username and password etc.
+- Continue forward and make sure to install OpenSSH.
+- After this continue until you can install the OS.
+<img width="638" alt="Screenshot 2024-09-08 140000" src="https://github.com/user-attachments/assets/158d1619-c960-4532-94d6-5371e903fd39">
