@@ -39,4 +39,5 @@
 - Once there select your username and password etc.
 - Continue forward and make sure to install OpenSSH.
 - After this continue until you can install the OS.
-<img width="638" alt="Screenshot 2024-09-08 140000" src="https://github.com/user-attachments/assets/158d1619-c960-4532-94d6-5371e903fd39">
+<img width="629" alt="Screenshot 2024-09-08 140212" src="https://github.com/user-attachments/assets/ab728555-50fb-4dd7-b3af-c36ee59a724e">
+
