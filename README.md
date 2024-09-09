@@ -1,43 +1,40 @@
 # Home-SOC-Analyst-Lab
+- Head over to Eric Escapuanos's guide for step-by-step instructions on this lab.
+- https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part
 # Configuration
-- First, we need to download VMware.
-- Second, let's download an ISO from: https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso
-- Next, let's create a VM using that ISO.
-- We can select a typical installation and then find and select the ISO to continue.
-- If you want you can change the Maximum disk size to 14GB and then continue.
-- Before we finish up let's customize the hardware by changing the memory to 2GB.
-- Ok, now we can finish up and Install the ISO.
-<img width="791" alt="Screenshot 2024-09-08 130029" src="https://github.com/user-attachments/assets/5f2c8631-3c3d-4cbc-97b4-9671034bf5bd">
+
+- The first steps of this lab will be downloading VMware and creating our Virtual Machines. There will be two virtual machines. We will run an Ubuntu Server VM that will serve as the attacker and a Windows VM that will serve as the endpoint. We also need to make the Windows VM vulnerable. To do that we will disable Microsoft Defender and change some settings to ensure that it does not turn back on.
+
+<img width="629" alt="Screenshot 2024-09-08 140212" src="https://github.com/user-attachments/assets/0417fde6-3d29-4512-bd54-975c9a921eb4">
 
 #
 
-- Next up, we'll have to run through some options during the OS install.
-- I selected English and on the next screen continued without updating.
-- Make sure Ubuntu Server is selected and continue.
-- When we get to network connections we need to set up a static IP Address.
-- This will ensure that the IP address for this VM won't charge during the entirety of this lab.
-- In the VMware workstation click edit and then select virtual network editor.
-- Select NAT and then Nat settings.
-- In NAT settings take note of the Subnet IP and the Gateway IP.
-- Now we need to head back over to the installation.
-- Once there, we need to manually edit the IPv4 information.
- <img width="635" alt="Screenshot 2024-09-08 133843" src="https://github.com/user-attachments/assets/d0df8011-a7fd-49c1-8e8c-ffded6352414">
+<img width="752" alt="Screenshot 2024-09-09 081252" src="https://github.com/user-attachments/assets/eec36d2f-8caf-4374-bdbe-62e651ef2ab3">
 
- #
+#
 
-- Go ahead and enter the Subnet IP Address that you copied down before and make sure to add /24 at the end of the address.
-- Next, for the address, we'll use the address from the previous screen under DHCPv4. Just make sure not to include /24 this time.
-- Next, enter the Gateway IP copied from earlier.
-- Finally, enter 8.8.8.8 under Name Server.
-- We can leave the search domains blank and then save these settings.
- <img width="632" alt="Screenshot 2024-09-08 134022" src="https://github.com/user-attachments/assets/8bc807f1-bd14-4fcf-b998-6e40e434247e">
+- Before we continue let's go ahead and set up sysmon on our Windows VM. Sysmon will provide detailed logging.
+- Once we enable sysmon to work alongside LimaCharlies EDR telemetry, we will have a much more comprehensive view of what is happening with the machine.
 
- #
+<img width="754" alt="Screenshot 2024-09-09 083413" src="https://github.com/user-attachments/assets/84f11c87-a5f7-4b25-af3d-853ba13822fa">
 
-- Copy down the static IP address and then continue.
-- Next, continue through the options until you get to the profile setup.
-- Once there select your username and password etc.
-- Continue forward and make sure to install OpenSSH.
-- After this continue until you can install the OS.
-<img width="629" alt="Screenshot 2024-09-08 140212" src="https://github.com/user-attachments/assets/ab728555-50fb-4dd7-b3af-c36ee59a724e">
+#
+
+- After that is finished we will set up a LimaCharlie account and install a sensor onto our endpoint machine. This will enable us to monitor what is happening on our compromised Windows VM. 
+
+<img width="752" alt="Screenshot 2024-09-09 085906" src="https://github.com/user-attachments/assets/5249c2b2-da26-4cc1-87bd-579b62ff8783">
+
+#
+ 
+<img width="518" alt="Screenshot 2024-09-09 085842" src="https://github.com/user-attachments/assets/8ec4e294-a1ec-4bb5-a92e-4473dd063c60">
+
+#
+
+- Now we can set up sysmon to work alongside LimaCharlie.
+- 
+<img width="779" alt="Screenshot 2024-09-09 090548" src="https://github.com/user-attachments/assets/ed24d8de-9bb5-490c-85ca-1d35b5b8acf9">
+
+#
+
+
 
