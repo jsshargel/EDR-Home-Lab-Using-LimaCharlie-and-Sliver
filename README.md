@@ -31,10 +31,60 @@
 #
 
 - Now we can set up sysmon to work alongside LimaCharlie.
-- 
+
 <img width="779" alt="Screenshot 2024-09-09 090548" src="https://github.com/user-attachments/assets/ed24d8de-9bb5-490c-85ca-1d35b5b8acf9">
 
 #
+
+- For the next step we'll SSH into our attack machine and download Sliver.
+- Sliver is an open-source Command and Control (C2) Framework.
+- This will be used to create realistic attack scenarios that we can use to detect and remedy via LimaCharlie.
+- We will use Sliver to generate the session payload(malware) that will be used to attack the Windows VM.
+
+<img width="489" alt="Screenshot 2024-09-09 094309" src="https://github.com/user-attachments/assets/5ed15473-9237-4ced-8ff6-1cc44eba17e2">
+
+#
+
+- Now we can download the payload on the Windows VM and connect to the session on our attack machine.
+
+<img width="848" alt="Screenshot 2024-09-09 095434" src="https://github.com/user-attachments/assets/162c5c08-251e-407a-b943-b016b8f4bbd7">
+
+#
+
+- Once we are connected we can start to see some interesting things.
+- We can use commands such as info, whoami, getprivs, etc to gain information about our victim's machine.
+
+<img width="856" alt="Screenshot 2024-09-09 095618" src="https://github.com/user-attachments/assets/e8a736f6-6d21-42f3-b4c8-6f91142f88cf">
+
+#
+
+- Sliver has a cool feature that will highlight its process in green and defensive tools in red.
+- This is important information for the attackers.
+
+<img width="854" alt="Screenshot 2024-09-09 095819" src="https://github.com/user-attachments/assets/e9a42dba-9fff-47cc-bd75-b94e7dbde2af">
+
+#
+
+<img width="844" alt="Screenshot 2024-09-09 095756" src="https://github.com/user-attachments/assets/b8734c76-3c7c-4d78-817c-a96f1381d178">
+
+#
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
