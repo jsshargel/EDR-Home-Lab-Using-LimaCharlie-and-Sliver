@@ -108,8 +108,72 @@
 
 #
 
-- Next, from Sliver we'll dump the lsass.exe process from memory. This is something attackers often do to steal credentials.
-- Since this is a sensitive process we'll be able to observe the relevant telemetry and figure out what to do from there. 
+- Next, using Sliver, we'll dump the lsass.exe process from memory. This is something attackers often do to steal credentials.
+- Since this is a sensitive process we'll be able to observe the relevant telemetry and figure out what to do from there.
+- If we search the timeline for sensitive processes we can detect a process that ends with lsass.exe.
+- This is exactly what we are looking for.
+
+<img width="1309" alt="Screenshot 2024-09-09 104910" src="https://github.com/user-attachments/assets/43f87163-1d87-40c5-889e-e067dc4750d0">
+
+#
+
+- Now that we have detected it we need to create a detection and response (D&R) rule to alert us anytime this occurs.
+- We can then test it to make sure the rule works.
+  
+<img width="1010" alt="Screenshot 2024-09-09 105142" src="https://github.com/user-attachments/assets/04e16d35-fe96-4776-a38d-5e0bb0688da9">
+
+#
+
+<img width="904" alt="Screenshot 2024-09-09 105215" src="https://github.com/user-attachments/assets/54843f37-f3bc-4e93-9683-f985f3144b42">
+
+#
+
+- Now that we have our rule defined and set let's dump the LSASS memory again and see if we can detect it.
+- Nice! We are able to see that the D&R rule worked.
+
+<img width="904" alt="Screenshot 2024-09-09 105215" src="https://github.com/user-attachments/assets/3c178e55-389f-4f90-a87b-e2b57743a198">
+
+#
+
+- Now that we have learned how to detect and respond let's take this a step further and block incoming attacks.
+- In Sliver shell we will run another command.
+- This time we will mimic a process that is commonly used in ransomware attacks.
+- We run a command to delete volume shadow copies so that we can see the resulting telemetry and figure out how to block it.
+- After running the command we can take note of the fact that we still have an active system shell.
+
+<img width="321" alt="Screenshot 2024-09-09 110115" src="https://github.com/user-attachments/assets/861ed0d0-b499-4df6-ab32-655ff38fbd3d">
+
+#
+
+- Ok, now let's head back over to LimaCharlie.
+- We see that the default Sigma rules picked up what we just did by default.
+-  Since this is a Sigma rule the metadata even gives helpful URLs that contain more information about this.
+- We can also click on "view event" to see the event on the timeline.
+
+<img width="1037" alt="Screenshot 2024-09-09 110218" src="https://github.com/user-attachments/assets/5b092927-bbaf-4106-80e3-9a43be7981f1">
+
+#
+
+<img width="1039" alt="Screenshot 2024-09-09 110251" src="https://github.com/user-attachments/assets/474ad93a-c12c-4ab5-a8fe-a2c7382a509a">
+
+#
+
+<img width="1037" alt="Screenshot 2024-09-09 110353" src="https://github.com/user-attachments/assets/30e692b5-810f-4c52-8895-d52b10aaa33f">
+
+#
+
+- When we create a D&R rule this time, we will make sure to not only detect but also kill the process responsible for running the command to delete volume shadow copies.
+- 
+<img width="803" alt="Screenshot 2024-09-09 110500" src="https://github.com/user-attachments/assets/7adf52e5-4015-4cf0-b950-6ea9865c5de9">
+
+#
+
+- When we run the same command again from Sliver, we can see that the D&R rule worked because the parent process was terminated!
+- Pretty cool!
+
+<img width="359" alt="Screenshot 2024-09-09 110623" src="https://github.com/user-attachments/assets/8a927de7-1e56-4dfa-a92c-b259baa07891">
+
+
 
 
 
