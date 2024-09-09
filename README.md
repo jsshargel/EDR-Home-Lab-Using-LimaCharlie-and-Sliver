@@ -69,8 +69,19 @@
 
 #
 
-- 
+- Let's head back over to LimaCharlie and observe the telemetry to see what has happened.
+- Let's navigate to the Windows Sensor we created and open processes.
+- In this case, we can easily spot the payload because it does not have a valid signature.
+- We can also see crucial information such as the path of the process and network connections
+<img width="782" alt="Screenshot 2024-09-09 103028" src="https://github.com/user-attachments/assets/691f43bc-420f-4f35-94b7-48714f80574d">
 
+#
+
+<img width="778" alt="Screenshot 2024-09-09 103144" src="https://github.com/user-attachments/assets/c073999c-d665-427c-b6e0-16634d5f2142">
+
+#
+
+- 
 
 
 
