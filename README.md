@@ -81,8 +81,35 @@
 
 #
 
-- 
+<img width="785" alt="Screenshot 2024-09-09 102943" src="https://github.com/user-attachments/assets/c64311b8-c48c-4d26-8512-a6013ec6d24b">
 
+#
+
+- Let's search the file system location where we know the payload to be and go a step further.
+- When we find it here we can use virustotal to scan the hash of the EXE. If it has seen the has before it will be detected.
+- In this case, we come up with nothing because we made this ourselves. 
+
+<img width="782" alt="Screenshot 2024-09-09 103314" src="https://github.com/user-attachments/assets/92532026-4066-488f-930f-a2c29d4d6d5d">
+
+#
+
+<img width="407" alt="Screenshot 2024-09-09 103332" src="https://github.com/user-attachments/assets/7fb10e66-753e-4719-af14-9e3e44c70e5d">
+
+#
+
+<img width="449" alt="Screenshot 2024-09-09 103354" src="https://github.com/user-attachments/assets/9e55a53c-fe14-43b4-897e-7023ab2e8237">
+
+#
+
+- Let's move on to the timeline.
+- The timeline will show us real-time EDR telemetry and event logs!
+
+<img width="788" alt="Screenshot 2024-09-09 104818" src="https://github.com/user-attachments/assets/591d817e-4680-416f-9a33-428e38660743">
+
+#
+
+- Next, from Sliver we'll dump the lsass.exe process from memory. This is something attackers often do to steal credentials.
+- Since this is a sensitive process we'll be able to observe the relevant telemetry and figure out what to do from there. 
 
 
 
