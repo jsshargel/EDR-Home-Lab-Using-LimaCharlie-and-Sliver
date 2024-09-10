@@ -46,14 +46,14 @@
 
 #
 
-- Now we can download the payload on the Windows VM and connect to the session on our attack machine.
+- Now we can download the payload on the Windows VM and connect to the session on the attack machine.
 
 <img width="848" alt="Screenshot 2024-09-09 095434" src="https://github.com/user-attachments/assets/162c5c08-251e-407a-b943-b016b8f4bbd7">
 
 #
 
 - Once we are connected we can start to see some interesting things.
-- We can use commands such as info, whoami, getprivs, etc to gain information about our victim's machine.
+- We can use commands such as info, whoami, getprivs, etc to gain information about the victim's machine.
 
 <img width="856" alt="Screenshot 2024-09-09 095618" src="https://github.com/user-attachments/assets/e8a736f6-6d21-42f3-b4c8-6f91142f88cf">
 
