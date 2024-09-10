@@ -164,7 +164,7 @@
 #
 
 - When we create a D&R rule this time, we will make sure to not only detect but also kill the process responsible for running the command to delete volume shadow copies.
-- 
+
 <img width="803" alt="Screenshot 2024-09-09 110500" src="https://github.com/user-attachments/assets/7adf52e5-4015-4cf0-b950-6ea9865c5de9">
 
 #
