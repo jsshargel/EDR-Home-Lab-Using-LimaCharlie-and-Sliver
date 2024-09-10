@@ -86,7 +86,7 @@
 
 #
 
-- Since we now know where the payload is located let's head there and go a step further.
+- Since we now know where the payload is located, let's head there and go a step further.
 - When we find it here we can use virustotal to scan the hash of the EXE. If it has seen the has before it will be detected.
 - In this case, we come up with nothing because we made this ourselves. 
 
