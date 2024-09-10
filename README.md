@@ -1,8 +1,8 @@
-# Home-SOC-Analyst-Lab
+# EDR Home Lab Using LimaCharlie and Sliver
+- This is an attack and defend set in a virtual environment. We will set up an Ubuntu Server as the attacker and a Windows VM as the vulnerable endpoint with sysmon and LimaCharlie EDR for monitoring. We will Sliver to simulate attacks and create D&R rules in LimaCharlie to detect, block, and terminate malicious processes.
 - Head over to Eric Escapuanos's guide for step-by-step instructions on this lab.
 - https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part
 # Configuration
-
 - The first steps of this lab will be downloading VMware and creating our Virtual Machines. There will be two virtual machines. We will run an Ubuntu Server VM that will serve as the attacker and a Windows VM that will serve as the endpoint. We also need to make the Windows VM vulnerable. To do that we will disable Microsoft Defender and change some settings to ensure that it does not turn back on.
 
 <img width="629" alt="Screenshot 2024-09-08 140212" src="https://github.com/user-attachments/assets/0417fde6-3d29-4512-bd54-975c9a921eb4">
