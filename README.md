@@ -131,7 +131,8 @@
 - Now that we have our rule defined and set let's dump the LSASS memory again and see if we can detect it.
 - Nice! We are able to see that the D&R rule worked.
 
-<img width="904" alt="Screenshot 2024-09-09 105215" src="https://github.com/user-attachments/assets/3c178e55-389f-4f90-a87b-e2b57743a198">
+<img width="1034" alt="Screenshot 2024-09-09 105804" src="https://github.com/user-attachments/assets/ee16250c-9b58-425f-8445-f8e12a0e5d76">
+
 
 #
 
