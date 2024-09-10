@@ -87,7 +87,7 @@
 #
 
 - Since we now know where the payload is located, let's head there and go a step further.
-- When we find it we can use virustotal to scan the hash of the EXE. If it has seen the hash before it will be detected.
+- When we find it we can use VirusTotal to scan the hash of the EXE. If it has seen the hash before it will be detected.
 - In this case, we come up with nothing because we made this ourselves. 
 
 <img width="782" alt="Screenshot 2024-09-09 103314" src="https://github.com/user-attachments/assets/92532026-4066-488f-930f-a2c29d4d6d5d">
