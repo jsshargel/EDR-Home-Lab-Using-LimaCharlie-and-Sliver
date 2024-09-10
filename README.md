@@ -112,7 +112,6 @@
 - Next, using Sliver, we'll dump the lsass.exe process from memory. This is something attackers often do to steal credentials.
 - Since this is a sensitive process we'll be able to observe the relevant telemetry and figure out what to do from there.
 - If we search the timeline for sensitive processes we can detect a process that ends with lsass.exe.
-- This is exactly what we are looking for.
 
 <img width="1309" alt="Screenshot 2024-09-09 104910" src="https://github.com/user-attachments/assets/43f87163-1d87-40c5-889e-e067dc4750d0">
 
