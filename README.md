@@ -20,7 +20,8 @@
 
 #
 
-- After that is finished we will set up a LimaCharlie account and install a sensor onto our endpoint machine. This will enable us to monitor what is happening on our compromised Windows VM. 
+- After that is finished we will set up a LimaCharlie account and install a sensor onto our endpoint machine.
+- This will enable us to monitor what is happening on our compromised Windows VM via LimaCharlie. 
 
 <img width="752" alt="Screenshot 2024-09-09 085906" src="https://github.com/user-attachments/assets/5249c2b2-da26-4cc1-87bd-579b62ff8783">
 
