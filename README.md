@@ -1,5 +1,5 @@
 # EDR Home Lab Using LimaCharlie and Sliver
-- This is an attack and defend set in a virtual environment. We will set up an Ubuntu Server as the attacker and a Windows VM as the vulnerable endpoint with sysmon and LimaCharlie EDR for monitoring. We will Sliver to simulate attacks and create D&R rules in LimaCharlie to detect, block, and terminate malicious processes.
+- This is an attack and defend set in a virtual environment. We will set up an Ubuntu Server as the attacker and a Windows VM as the vulnerable endpoint with sysmon and LimaCharlie EDR for monitoring. We will use Sliver to simulate attacks and create D&R rules in LimaCharlie to detect, block, and terminate malicious processes.
 - Head over to Eric Escapuanos's guide for step-by-step instructions on this lab.
 - https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part
 # Configuration
